@@ -10,10 +10,138 @@
 <body>
   <h1>Jadir Bicha</h1>
   <p>Site mini-curso git e github</p>
-  <h2>23 - 10 - 2025</h2>
+  <p>23 - 10 - 2025</p>
   <div class="container-imagem-botao">
   <img src="jadirbicha.png" alt="Descrição da imagem">
   <button onclick="alert('Pra caralho!');">Jadir é Bicha?</button>
+  <div class="git-comandos">
+  <h1 class="titulo-principal">Guia de Comandos Git e GitHub</h1>
+
+  <div class="comando">
+    <h2 class="titulo-comando">git init</h2>
+    <p class="descricao-comando">
+      Inicializa um novo repositório Git no diretório atual. Cria uma pasta oculta <code>.git</code> 
+      que armazenará todo o histórico de versões do seu projeto.
+    </p>
   </div>
+
+  <div class="comando">
+    <h2 class="titulo-comando">git status</h2>
+    <p class="descricao-comando">
+      Mostra o estado atual do repositório, exibindo arquivos modificados, adicionados ou não rastreados.
+    </p>
+  </div>
+
+  <div class="comando">
+    <h2 class="titulo-comando">git add</h2>
+    <p class="descricao-comando">
+      Adiciona arquivos à área de preparação (staging area).  
+      Exemplo: <code>git add .</code> adiciona todos os arquivos modificados.
+    </p>
+  </div>
+
+  <div class="comando">
+    <h2 class="titulo-comando">git commit -m "mensagem"</h2>
+    <p class="descricao-comando">
+      Salva as alterações adicionadas no repositório local com uma mensagem descritiva.
+    </p>
+  </div>
+
+  <div class="comando">
+    <h2 class="titulo-comando">git log</h2>
+    <p class="descricao-comando">
+      Exibe o histórico de commits realizados no repositório, incluindo autor, data e mensagem.
+    </p>
+  </div>
+
+  <div class="comando">
+    <h2 class="titulo-comando">git branch</h2>
+    <p class="descricao-comando">
+      Lista as branches (ramificações) existentes ou cria uma nova branch se usado com um nome, por exemplo:  
+      <code>git branch nova-feature</code>.
+    </p>
+  </div>
+
+  <div class="comando">
+    <h2 class="titulo-comando">git checkout</h2>
+    <p class="descricao-comando">
+      Permite alternar entre branches ou commits específicos.  
+      Exemplo: <code>git checkout main</code> muda para a branch principal.
+    </p>
+  </div>
+
+  <div class="comando">
+    <h2 class="titulo-comando">git merge</h2>
+    <p class="descricao-comando">
+      Mescla as alterações de uma branch em outra.  
+      Exemplo: estando na <code>main</code>, use <code>git merge nova-feature</code> para unir as mudanças.
+    </p>
+  </div>
+
+  <div class="comando">
+    <h2 class="titulo-comando">git remote add origin &lt;url&gt;</h2>
+    <p class="descricao-comando">
+      Conecta seu repositório local a um repositório remoto no GitHub.  
+      Exemplo: <code>git remote add origin https://github.com/usuario/repositorio.git</code>
+    </p>
+  </div>
+
+  <div class="comando">
+    <h2 class="titulo-comando">git push -u origin main</h2>
+    <p class="descricao-comando">
+      Envia seus commits locais para o repositório remoto (GitHub).  
+      O <code>-u</code> define a branch <code>main</code> como padrão para futuros pushes.
+    </p>
+  </div>
+
+  <div class="comando">
+    <h2 class="titulo-comando">git pull</h2>
+    <p class="descricao-comando">
+      Atualiza seu repositório local com as mudanças mais recentes do repositório remoto.
+    </p>
+  </div>
+
+  <div class="comando">
+    <h2 class="titulo-comando">git clone &lt;url&gt;</h2>
+    <p class="descricao-comando">
+      Clona (baixa) um repositório existente do GitHub para o seu computador.
+    </p>
+  </div>
+</div>
+<div class="comando info">
+  <h2 class="titulo-comando">git status</h2>
+  <p class="descricao-comando">
+    Mostra o estado atual do repositório, exibindo arquivos modificados, adicionados ou não rastreados.
+  </p>
+  <div class="exemplo">
+    Exemplo:<br>
+    <code>$ git status</code>
+  </div>
+</div>
+
+<div class="comando success">
+  <h2 class="titulo-comando">git commit -m "mensagem"</h2>
+  <p class="descricao-comando">
+    Cria um novo ponto no histórico do repositório local com uma mensagem descritiva.
+  </p>
+  <div class="exemplo">
+    Exemplo:<br>
+    <code>$ git commit -m "Adiciona nova seção ao site"</code>
+  </div>
+</div>
+
+<div class="comando alert">
+  <h2 class="titulo-comando">git merge</h2>
+  <p class="descricao-comando">
+    Mescla alterações de uma branch em outra. Pode gerar conflitos se houver mudanças no mesmo arquivo.
+  </p>
+  <div class="exemplo">
+    Exemplo:<br>
+    <code>$ git merge nova-feature</code><br>
+    (Se houver conflitos, o Git pedirá para resolvê-los antes de concluir o merge.)
+  </div>
+</div>
+
+
 </body>
 </html>
